@@ -11,9 +11,9 @@ class IrisModel {
 
 	public function __construct() {
 		$this->server = '127.0.0.1';
-		$this->database = 'iris';
-		$this->username = 'adminn8qcPyU';
-		$this->password = 'En9H8_kr5X4J';
+		$this->database = 'ritchief_iris';
+		$this->username = 'ritchief_ritchie';
+		$this->password = 'HOj#cBPl57lj%@jJVgS$';
 		$this->dsn = 'mysql:host=' . $this->server . ';dbname=' . $this->database;
 	}
 
