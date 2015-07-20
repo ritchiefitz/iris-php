@@ -1,0 +1,347 @@
+@import url(http://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400,700);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600);
+
+// Theme Colors
+$red: #96242f;
+$darkColor: #2f2f2f;
+
+// Fonts
+$logoFont: 'Nothing You Could Do', cursive;
+$headerFont: 'Vollkorn', serif;
+$bodyFont: 'Josefin Sans', sans-serif;
+
+// Shadows
+$mainShadow: 0 0 5px 5px rgba(5, 5, 5, 0.73);
+
+body {
+	background: url(../images/background.jpg) no-repeat fixed;
+	background-position: top center;
+	background-size: cover;
+	color: $darkColor;
+	font-family: $bodyFont;
+}
+
+header {
+	color: #FFFFFF;
+	background: $red;
+	box-shadow: $mainShadow;
+	position: relative;
+	z-index: 999;
+
+	li {
+		background: url(../images/begin-quotes.png) no-repeat top left, url(../images/end-quotes.png) no-repeat top right;
+		background-size: 5%;
+  		padding: 0 24px;
+	}
+}
+
+footer {
+	color: #FFFFFF;
+	background: $red;
+	box-shadow: $mainShadow;
+	position: fixed !important;
+	bottom: 0;
+
+	p {
+		margin: 10px;
+	}
+}
+
+nav {
+	font-size: 1.8em;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: inline-block;
+		list-style-type: none;
+		margin: 12px;
+		font-size: 1em;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $headerFont;
+	color: $red;
+}
+
+p,
+li,
+a {
+	font-size: 1.5em;
+}
+
+.logo {
+	color: #FFFFFF;
+	font-family: $logoFont;
+	font-size: 3em;
+}
+
+.logo:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.login-wrapper {
+	display: inline-block;
+	width: 700px;
+	position: absolute;
+	top: 55px;
+	left: 50%;
+	margin-left: -350px;
+	background: #FFFFFF;
+	box-shadow: $mainShadow;
+	padding: 0 1% 15px;
+	text-align: center;
+}
+
+.form-control,
+.btn,
+input {
+	font-size: 18px;
+}
+
+.btn-default {
+	color: #FFF;
+	background-color: #96242f;
+	border-color: #ccc;
+	border-radius: 0;
+	padding: 7px 35px;
+}
+
+.btn-default:hover {
+	color: #FFF;
+	background-color: rgba(150, 36, 47, 0.85)
+}
+
+.half-side {
+	display: inline-block;
+	width: 46%;
+	text-align: center;
+	vertical-align: top;
+  	margin: 0 1%;
+}
+
+.login-logo {
+	color: $red;
+	font-family: $logoFont;
+	font-size: 5em;
+	text-align: center;
+}
+
+#flipbook {
+	margin-top: 20px;
+}
+#flipbook .shadow,
+#flipbook.shadow{
+  -webkit-box-shadow: $mainShadow;
+  -moz-box-shadow: $mainShadow;
+  -ms-box-shadow: $mainShadow;
+  -o-box-shadow: $mainShadow;
+  box-shadow: $mainShadow;
+}
+
+.hard.page {
+	background: #736855;
+}
+.hard.page.p1 {
+	background: url(../images/journal-cover-lg.png) no-repeat center;
+	text-align: center;
+
+	.title {
+		font-size: 6em;
+		margin: 150px 40px 0 139px;
+		line-height: 1;
+	}
+}
+.hard.last {
+	background: url(../images/journal-cover-lg-back.png) no-repeat center;
+}
+
+.page {
+	background: #FFF;
+	color: #000;
+}
+
+.journal-page {
+	position: relative;
+	margin: 20px;
+
+	.title {
+		font-size: 2em;
+		font-family: $logoFont;
+	}
+
+	.date {
+		font-family: $headerFont;
+		margin-bottom: 15px;
+		font-size: 1.2em;
+	}
+
+	.page-number {
+		font-family: $headerFont;
+		margin-bottom: 15px;
+		font-size: 1.2em;
+		position: absolute;
+		top: 0;
+		right: 10px;
+	}
+
+	.journal-content {
+		font-size: 1.15em;
+	}
+}
+
+.page.even {
+	box-shadow: inset -7px 0 15px -7px #666 !important;
+}
+.page.odd {
+	box-shadow: inset 7px 0 15px -7px #666 !important;
+}
+
+.sidebar {
+	background: #FFFFFF;
+	box-shadow: $mainShadow;
+	position: relative;
+	top: -12px;
+	padding: 25px 15px 15px;
+	
+	h2 {
+		font-size: 1.9em;
+	}
+	
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	a {
+		font-size: 1em;
+	}
+}
+
+.content {
+	background: #FFFFFF;
+	box-shadow: $mainShadow;
+	position: relative;
+	top: -12px;
+	padding: 25px 15px 15px;
+}
+
+.journals {
+	.journal {
+		display: inline-block;
+		width: 200px;
+		height: 274px;
+		background: url(../images/journal-cover.png) no-repeat center;
+		margin: 15px 30px;
+		text-align: center;
+	}
+
+	.title {
+		color: #210F08;
+		font-size: 2em;
+		display: inline-block;
+		line-height: 1;
+		margin: 50px 15px 0 50px;
+	}
+}
+
+.matched-result {
+	font-size: 1.3em;
+	padding: 5px 0;
+}
+
+.matched-result:nth-child(even) {
+	background: rgba(179, 162, 132, 0.56);
+}
+
+.matched-result:hover {
+	background: rgba(150, 36, 47, 0.72);
+	cursor: pointer;
+}
+
+.account-info {
+	font-size: 1.5em;
+
+	label {
+		width: 110px;
+	}
+}
+
+.custom-page {
+	display: inline-block;
+  	height: 750px;
+  	width: 548px;
+
+	background: #FFFFFF;
+	padding: 20px 2%;
+	margin: 20px;
+	box-shadow: $mainShadow;
+
+	input[type=text],
+	textarea {
+		border: 0;
+		box-shadow: none;
+		padding-left: 0;
+	}
+
+	#page-title {
+		font-size: 2em;
+		font-family: $logoFont;
+		height: auto;
+	}
+
+	#page-date {
+		font-size: 1.2em;
+		font-family: $headerFont;
+	}
+
+	#page-content {
+		height: 545px;
+		width: 100%;
+		font-size: 1.15em;
+
+		resize: none;
+	}
+
+	.form-group:first-of-type {
+		margin: 0;
+	}
+}
+
+.edit-form {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	top: 0;
+	background-color: rgba(255, 255, 255, 0.71);
+}
+
+.edit-submit {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -71px;
+	margin-top: -40px;
+}
+
+.form-control-inline {
+    min-width: 0;
+    width: auto;
+    display: inline;
+}
